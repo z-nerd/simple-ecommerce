@@ -1,0 +1,103 @@
+.product {
+    position: relative;
+    width: 18.4375rem;
+    height: 30rem;
+    border-radius: 3.1875rem;
+    background: #efefef;
+    transition: all 0.45s ease-in-out;
+
+    &:hover{
+        transform: scale(1.15);
+    }
+
+    &-img {
+        height: 44%;
+        border-radius: 3.1875rem;
+        position: absolute;
+        inset-inline-start: 50%;
+        inset-block-start: 0%;
+        transform: translate(-50%, 0%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    &-context {
+        width: 100%;
+        height: 56%;
+        position: absolute;
+        inset-block-end: 0px;
+        inset-inline-start: 0px;
+        border-radius: 3.1875rem;
+        background: linear-gradient(313deg, #50C9C3 0%, #96DEDA 100%);
+        box-shadow: -9px 0px 29px 0px rgba(89, 197, 186, 0.40);
+
+        &_title {
+            color: #FFF;
+            font-family: Futura;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            margin-block-start: 2.5rem;
+            margin-inline-start: 2.12rem;
+        }
+
+        &_company {
+            color: #FFF;
+            font-family: Futura;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            margin-block-start: 0.35rem;
+            margin-inline-start: 2.12rem;
+        }
+
+        &_description {
+            color: #FFF;
+            font-family: Futura;
+            font-size: 0.625rem;
+            margin-block-start: 2rem;
+            margin-inline-start: 2.12rem;
+            margin-inline-end: 3.13rem;
+        }
+    }
+
+    &-add {
+        position: absolute;
+        inset-block-end: 1.78rem;
+        inset-inline-end: 1.78rem;
+        background-color: #23A0A5;
+        width: 2.875rem;
+        height: 2.875rem;
+        border-radius: 2rem;
+        outline-style: none;
+        border: none;
+        user-select: none;
+        cursor: pointer;
+
+        &_text{
+            position: absolute;
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.23rem;
+        }
+        &:hover{
+            opacity: 0.90;
+        }
+        &:active{
+            opacity: 0.50;
+        }
+    }
+
+    &-price {
+        position: absolute;
+        inset-block-end: 2.59rem;
+        inset-inline-start: 1.78rem;
+        color: #FFF;
+        font-family: Futura;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+}

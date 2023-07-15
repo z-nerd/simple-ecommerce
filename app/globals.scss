@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0px auto;
+    clip-path: url(#page-background);
+}
+
+#page-background {
+    position: absolute;
+    width: 55.625rem;
+    inset-inline-start: 0px;
+    inset-block-start: 0px;
+    z-index: -999;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 6.5rem;
+    padding-inline-start: 5.56rem;
+    padding-inline-end: 7.34rem;
+    margin: 0px auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &_toolbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+
+    &_text {
+        color: #0B7171;
+        font-family: Futura;
+        font-size: 2.1875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &_img {
+        width: 22px;
+        height: 22px;
+        background-image: url(/lotus.png);
+        margin-inline: 22px;
+    }
+}
+
+.basket {
+    width: 33px;
+    height: 33px;
+    background-image: url(/basket.png);
+}
+
+.search_bar {
+    width: 13rem;
+    height: 2.8125rem;
+    padding-inline-start: 1.37rem;
+    padding-inline-end: 2.3rem;
+    margin-inline-end: 2rem;
+
+    color: #0B7171;
+    font-family: Futura;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    border: 1px solid #CFCFCF;
+    border-radius: 1.40625rem;
+    outline-style: none;
+
+    background-image: url(/search.png);
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-best-sellers {
+        width: 43rem;
+    }
+
+    &-aside{
+        margin-block-start: 5.2rem;
+        &_title{
+            color: #0B7171;
+            font-family: Futura;
+            font-size: 2.1875rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &_list {
+            margin-block-start: 2.62rem;
+
+            & > div {
+                margin-block-end: 3.92rem;
+            }
+        }
+    }
+}

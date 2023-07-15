@@ -1,0 +1,150 @@
+.product {
+    position: relative;
+    width: 24.125rem;
+    height: 10.8125rem;
+    border-radius: 1.8125rem;
+    background: #FFF;
+    transition: all 0.45s ease-in-out;
+    
+    &_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        inset-inline-start: 50%;
+        inset-block-start: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &-context {
+        padding-inline-end: 5rem;
+        text-align: center;
+
+        &_title {
+            text-align: center;
+            color: #0B7171;
+            font-family: Futura;
+            font-size: 0.9375rem;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        &_description {
+            text-align: center;
+            color: #B3B3B3;
+            font-family: Futura;
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+
+    &-img {
+        position: relative;
+        width: 5.375rem;
+        height: 5.375rem;
+        border-radius: 5.375rem;
+        background-color: #F6F6F6;
+        // background-size: 100% 100%;
+        // background-repeat: no-repeat;
+        // border-radius: 3.1875rem;
+        // background-size: 10% 10%;
+        // background-repeat: no-repeat;
+
+        & > img {
+            width: 3.0625rem;
+            height: 3.0625rem;
+            position: absolute;
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-price {
+        position: relative;
+        transform: scale(0);
+        margin-inline-start: 1rem;
+        width: 2.0625rem;
+        height: 6.4375rem;
+        border-radius: 0.875rem;
+        background: #25A2A6;
+        transition: all 0.45s ease-in-out;
+
+        &_text {
+            position: absolute;
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+
+    &-add {
+        position: absolute;
+        inset-block-end: 1.16rem;
+        inset-inline-end: 1.28rem;
+        background-color: #23A0A5;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        outline-style: none;
+        border: none;
+        user-select: none;
+        cursor: pointer;
+
+        &_text{
+            position: absolute;
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.23rem;
+        }
+        &:hover{
+            opacity: 0.90;
+        }
+        &:active{
+            opacity: 0.50;
+        }
+    }
+
+    &:hover {
+        width: 24.125rem;
+        height: 10.8125rem;
+        border-radius: 1.8125rem;
+        background: linear-gradient(44deg, #50C9C3 0%, #96DEDA 100%);
+
+        .product-price {
+            transform: scale(1);
+        }
+
+
+        .product-add {
+            background-color: #fff;
+        }
+        .product-add_text {
+            color: #23A0A5;
+        }
+        
+
+        .product-context_title {
+            color: #FFF;
+            font-family: Futura;
+            font-size: 0.9375rem;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .product-context_description {
+            color: #FFF;
+            font-family: Futura;
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+}
